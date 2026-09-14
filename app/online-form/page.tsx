@@ -1,0 +1,5 @@
+import { PageShell } from "@/components/PageShell";
+import { ButtonLink } from "@/components/ButtonLink";
+export const metadata={title:"Online Forms"};
+const forms=[['UIDAI','https://uidai.gov.in/'],['Parivahan','https://parivahan.gov.in/'],['Election Commission of India','https://www.eci.gov.in/'],['EPFO India','https://www.epfindia.gov.in/site_en/index.php'],['DigiLocker','https://www.digilocker.gov.in/']];
+export default function OnlineForm(){return <PageShell><section className="mx-auto max-w-5xl px-4 py-20 sm:px-6"><h1 className="text-center text-4xl font-black text-brand-navy">Online Forms & Services</h1><p className="mx-auto mt-4 max-w-2xl text-center text-slate-600">Useful official online service portals.</p><div className="mt-10 grid gap-5 sm:grid-cols-2">{forms.map(([name,url])=><div key={name} className="rounded-xl border bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-brand-navy">{name}</h2><ButtonLink href={url} external className="mt-5">Open Official Website</ButtonLink></div>)}</div></section></PageShell>}
