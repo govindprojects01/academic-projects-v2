@@ -1,0 +1,4 @@
+import { PageShell } from "@/components/PageShell";
+import { SectionHeading } from "@/components/SectionHeading";
+export const metadata={title:"About"};
+export default function About(){return <PageShell><section className="mx-auto max-w-4xl px-4 py-20 sm:px-6"><SectionHeading eyebrow="About Project Area" title="Academic support built around student needs" subtitle="We help students with projects, reports, presentations, thesis printing and practical guidance from topic selection to final submission."/><div className="mt-10 rounded-xl border bg-white p-7 leading-8 text-slate-700 shadow-sm"><p>Project Area provides academic project assistance for students in Varanasi and online. Our focus is clear documentation, professional presentation, timely delivery and direct support.</p><p className="mt-5">Visit our services page to explore available academic and printing solutions, or contact us for a custom requirement.</p></div></section></PageShell>}
